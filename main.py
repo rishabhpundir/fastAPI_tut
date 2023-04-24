@@ -3,9 +3,7 @@ from typing import Optional
 from fastapi import FastAPI
 import uvicorn
 
-
 app = FastAPI()
-
 class Blog(BaseModel): ## Creating a POST request body for the user to fill data in
     title: str
     body: str ## Anything not optional will be marked as required in the request
